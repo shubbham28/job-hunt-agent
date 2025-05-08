@@ -13,8 +13,7 @@ An AI agent that automates job discovery, filtering, and ATS-based scoring using
 
 ## 📁 Folder Structure
 
-```
-
+```yaml
 job\_hunt\_agent/
 ├── config/                    # API keys, credentials
 │   └── credentials.yaml
@@ -40,8 +39,7 @@ job\_hunt\_agent/
 │   ├── scrape\_utils.py
 ├── main.py           # Main app UI
 └── job\_hunt\_agent\_notebook.ipynb  # Jupyter-based control
-
-````
+```
 
 ---
 
@@ -49,7 +47,7 @@ job\_hunt\_agent/
 
 Install all requirements:
 
-* Python 3.8+
+* `Python 3.8+`
 * `streamlit`, `openai`, `requests`, `pandas`, `PyMuPDF`, `beautifulsoup4`, `PyYAML`
 
 ---
@@ -82,8 +80,6 @@ streamlit run main.py
 * View ATS scoring live
 * Results shown in an interactive table with clickable application links
 
----
-
 ### 📘 Option 2: Use the Notebook
 
 Open `job_hunt_agent_notebook.ipynb` and run:
@@ -104,12 +100,15 @@ Each job is scored against your CV using GPT-3.5:
 * Only new jobs are scored
 * Reasoning and scores are stored in `output/ats_ranked_jobs.csv`
 
+---
+
 ## ✅ Built-in Safeguards
 
 * ⏱ Skips jobs already processed
 * 🔁 Avoids scraping duplicates within 24h
 * 🚫 Stops if no jobs found after deduplication
 
+---
 
 ## 👨‍💻 Author
 
