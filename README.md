@@ -14,31 +14,30 @@ An AI agent that automates job discovery, filtering, and ATS-based scoring using
 ## 📁 Folder Structure
 
 ```yaml
-job\_hunt\_agent/
+job_hunt_agent/
 ├── config/                    # API keys, credentials
 │   └── credentials.yaml
-├── cv\_input/                  # Upload your CV here
-│   └── your\_cv.pdf
+├── cv_input/                  # Upload your CV here
+│   └── your_cv.pdf
 ├── data/                      # Intermediate data files
-│   ├── cv\_parsed.txt
-│   ├── suggested\_roles.txt
-│   ├── raw\_jobs.json
-│   ├── filtered\_jobs.json
-│   └── jobs\_history.json
+│   ├── cv_parsed.txt
+│   ├── suggested_roles.txt
+│   ├── raw_jobs.json
+│   ├── filtered_jobs.json
+│   └── jobs_history.json
 ├── output/                    # Final job list with ATS scores
-│   └── ats\_ranked\_jobs.csv
+│   └── ats_ranked_jobs.csv
 ├── scripts/                   # Pipeline components
-│   ├── parse\_cv.py
-│   ├── suggest\_roles.py
-│   ├── scrape\_jobs.py
-│   ├── deduplicate\_jobs.py
-│   ├── score\_ats.py
-│   ├── email\_jobs.py
+│   ├── parse_cv.py
+│   ├── suggest_roles.py
+│   ├── scrape_jobs.py
+│   ├── deduplicate_jobs.py
+│   ├── score_ats.py
 │   └── main.py
 ├── utils/                     # Shared logic
-│   ├── scrape\_utils.py
+│   ├── scrape_utils.py
 ├── main.py           # Main app UI
-└── job\_hunt\_agent\_notebook.ipynb  # Jupyter-based control
+└── job_hunt_agent_notebook.ipynb  # Jupyter-based control
 ```
 
 ---
